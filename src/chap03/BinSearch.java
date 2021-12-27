@@ -41,6 +41,11 @@ public class BinSearch {
 		
 		System.out.println("검색할 값 : ");
 		int key = sc.nextInt();
-		binSearch(x, num, key);
+		int result = binSearch(x, num, key);
+		if(result < 0) {
+			System.out.println("검색한 값이 없습니다.");
+		}else {
+			System.out.println(key +"값은 x[" + result + "]");
+		}
 	}
 }
